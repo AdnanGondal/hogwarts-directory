@@ -32,7 +32,9 @@ class Form extends React.Component {
     return (
       <div className="form-container">
         <form className="form">
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name" placeholder="Hermione Granger">
+            Name
+          </label>
           <input
             type="text"
             name="name"
@@ -40,7 +42,7 @@ class Form extends React.Component {
             value={name}
             onChange={(e) => this.handleChange(e)}
           />
-          <label htmlFor="house">House: </label>
+          <label htmlFor="house">House</label>
           <input
             type="text"
             name="house"
@@ -49,7 +51,12 @@ class Form extends React.Component {
             onChange={(e) => this.handleChange(e)}
           />
         </form>
-        <input type="button" value="Submit" onClick={this.submitForm} />
+        <input
+          className="submit-but"
+          type="button"
+          value="Submit"
+          onClick={this.submitForm}
+        />
       </div>
     );
   }

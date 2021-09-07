@@ -142,3 +142,39 @@ tfoot th {
   flex-direction: column;
   text-align: left;
 }
+
+.form label {
+  padding-left: 11px;
+  margin-bottom: 4px;
+}
+
+.form input[type="text"] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #a80c1e;
+  color: #a0d18c;
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.form input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #a80c1e;
+  color: #2d9fd9;
+}
+
+.submit-but {
+  background-color: #a80c1e;
+  border: none;
+  color: white;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 12px;
+}
