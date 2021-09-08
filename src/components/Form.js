@@ -8,6 +8,7 @@ class Form extends React.Component {
         name: "",
         house: "Gryffindor",
       },
+      showError: false,
     };
     this.state = this.initialState;
   }
@@ -34,13 +35,13 @@ class Form extends React.Component {
 
   validate = () => {
     if (!this.state.student.name) {
-      // Could potentially add DOM element to show error.
-      alert("Name is required. ");
+      this.setState({ showError: true });
     } else return true;
   };
 
   render() {
     const { name, house } = this.state.student;
+    const { showError } = this.state;
 
     return (
       <div className="form-container">
@@ -74,6 +75,9 @@ class Form extends React.Component {
             <option value="Hufflepuff">Hufflepuff</option>
           </select>
         </form>
+        <p className="error-message">
+          {showError ? "Please enter an appropriate name" : " "}
+        </p>
         <input
           className="submit-but"
           type="button"
