@@ -4,39 +4,43 @@ class Form extends React.Component {
   constructor() {
     super();
     this.initialState = {
-      name: "",
-      house: "",
+      student: {
+        name: "",
+        house: "Gryffindor",
+      },
     };
-    this.state = {
-      name: "",
-      house: "",
-    };
+    this.state = this.initialState;
   }
 
   handleChange = (event) => {
     const { name, value } = event.target;
 
-    this.setState({
-      [name]: value,
+    this.setState((prevState) => {
+      return {
+        student: {
+          ...prevState.student,
+          [name]: value,
+        },
+      };
     });
   };
 
   submitForm = () => {
     if (this.validate()) {
-      this.props.handleSubmit(this.state);
+      this.props.handleSubmit(this.state.student);
       this.setState(this.initialState);
     }
   };
 
   validate = () => {
-    if (!this.state.name) {
+    if (!this.state.student.name) {
       // Could potentially add DOM element to show error.
       alert("Name is required. ");
     } else return true;
   };
 
   render() {
-    const { name, house } = this.state;
+    const { name, house } = this.state.student;
 
     return (
       <div className="form-container">
@@ -51,13 +55,24 @@ class Form extends React.Component {
             onChange={(e) => this.handleChange(e)}
           />
           <label htmlFor="house">House</label>
-          <input
-            type="text"
+          {/* <input
+            type="select"
             name="house"
             id="house"
             value={house}
             onChange={(e) => this.handleChange(e)}
-          />
+          /> */}
+          <select
+            onChange={(e) => this.handleChange(e)}
+            name="house"
+            id="house"
+            value={house}
+          >
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+          </select>
         </form>
         <input
           className="submit-but"

@@ -160,6 +160,18 @@ tfoot th {
   margin-bottom: 10px;
 }
 
+.form select {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #a80c1e;
+  color: black;
+  width: 266px;
+  height: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
 .form input[type="text"]:focus {
   outline: none;
   border: 1px solid #a80c1e;
