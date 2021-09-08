@@ -14,19 +14,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   color: #a80c1e;
   display: block;
   font-size: 3rem;
   font-weight: normal;
-  letter-spacing: -3.5px;
+  letter-spacing: -1.5px;
   line-height: 1em;
   margin: 0rem 0rem 1rem 0rem;
 }
 table {
   table-layout: fixed;
-  width: 100%;
+  width: 60%;
   border-collapse: collapse;
   border: 3px solid black;
   margin-bottom: 5px;
@@ -196,4 +201,13 @@ tfoot th {
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+}
+
+.add-student {
+  color: #a80c1e;
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0.5rem 0rem 0.5rem 0rem;
 }

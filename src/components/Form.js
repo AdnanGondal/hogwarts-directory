@@ -6,7 +6,7 @@ class Form extends React.Component {
     this.initialState = {
       student: {
         name: "",
-        house: "Gryffindor",
+        house: this.sortingHat(),
       },
       showError: false,
     };
@@ -39,12 +39,18 @@ class Form extends React.Component {
     } else return true;
   };
 
+  sortingHat = () => {
+    const items = ["Gryffindor", "Slytherin", "Hufflepuff", "Raveclaw"];
+    return items[Math.floor(Math.random() * items.length)];
+  };
+
   render() {
     const { name, house } = this.state.student;
     const { showError } = this.state;
 
     return (
       <div className="form-container">
+        <h2 className="add-student">Add a student: </h2>
         <form className="form">
           <label htmlFor="name">Name</label>
           <input
@@ -69,6 +75,7 @@ class Form extends React.Component {
             id="house"
             value={house}
           >
+            <option value={this.sortingHat()}>Sort Me!</option>
             <option value="Gryffindor">Gryffindor</option>
             <option value="Slytherin">Slytherin</option>
             <option value="Ravenclaw">Ravenclaw</option>
