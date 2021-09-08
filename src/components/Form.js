@@ -22,8 +22,17 @@ class Form extends React.Component {
   };
 
   submitForm = () => {
-    this.props.handleSubmit(this.state);
-    this.setState(this.initialState);
+    if (this.validate()) {
+      this.props.handleSubmit(this.state);
+      this.setState(this.initialState);
+    }
+  };
+
+  validate = () => {
+    if (!this.state.name) {
+      // Could potentially add DOM element to show error.
+      alert("Name is required. ");
+    } else return true;
   };
 
   render() {
@@ -32,14 +41,13 @@ class Form extends React.Component {
     return (
       <div className="form-container">
         <form className="form">
-          <label htmlFor="name" placeholder="Hermione Granger">
-            Name
-          </label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
             id="name"
             value={name}
+            placeholder="Hermione Granger"
             onChange={(e) => this.handleChange(e)}
           />
           <label htmlFor="house">House</label>

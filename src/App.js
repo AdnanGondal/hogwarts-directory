@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "./Table";
-import Form from "./Form";
-import Header from "./Header";
+import Table from "./components/Table";
+import Form from "./components/Form";
+import Header from "./components/Header";
 
 class App extends React.Component {
   constructor() {
