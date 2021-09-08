@@ -62,13 +62,6 @@ class Form extends React.Component {
             onChange={(e) => this.handleChange(e)}
           />
           <label htmlFor="house">House</label>
-          {/* <input
-            type="select"
-            name="house"
-            id="house"
-            value={house}
-            onChange={(e) => this.handleChange(e)}
-          /> */}
           <select
             onChange={(e) => this.handleChange(e)}
             name="house"
@@ -82,9 +75,7 @@ class Form extends React.Component {
             <option value="Hufflepuff">Hufflepuff</option>
           </select>
         </form>
-        <p className="error-message">
-          {showError ? "Please enter an appropriate name" : " "}
-        </p>
+        <p className="error-message">{showError ? "Error" : " "}</p>
         <input
           className="submit-but"
           type="button"
