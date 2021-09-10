@@ -1,8 +1,6 @@
 # Hogwarts Student Directory
 
-![Screenshot 2021-09-10 at 15 28 09](https://user-images.githubusercontent.com/43793942/132869605-27c13cb8-c292-45ce-99f8-aa0228a48064.png =400x)
-
-<img src="https://user-images.githubusercontent.com/43793942/132869605-27c13cb8-c292-45ce-99f8-aa0228a48064.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/43793942/132869605-27c13cb8-c292-45ce-99f8-aa0228a48064.png" alt="drawing" width="400"/>
 
 ## About
 
