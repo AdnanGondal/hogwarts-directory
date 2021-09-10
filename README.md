@@ -1,10 +1,37 @@
-# Getting Started with Create React App
+# Hogwarts Student Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot 2021-09-10 at 15 28 09](https://user-images.githubusercontent.com/43793942/132869605-27c13cb8-c292-45ce-99f8-aa0228a48064.png)
 
-## Available Scripts
+
+
+## About
+
+This is an application that stores the name and house of students at Hogwarts. Students can be removed and added. When adding a student, you can choose the house they are allocated, or select the option to randomly get sorted into a house. This is my first app built using the powerful React framework. The concepts I learned about and utilised in this project inlcude: 
+
+* JSX
+* React Elements
+* React Components
+* Functional and Class Based Components
+* Styling in Reacts
+* Props and State
+* Events in React
+* React Forms
+* Conditional Rendering
+* Testing with Jest
+* React Testing Library
+
+
+## Live link
+
+The live link for this app will be avalaible soon. 
+
+## Usage and Installiation
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Install all dependencies via the yarn package manager
 
 ### `yarn start`
 
@@ -39,32 +66,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Status
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Development on this project has been put to a stop.  
