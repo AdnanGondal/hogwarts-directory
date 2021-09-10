@@ -6,16 +6,16 @@ import {
 } from "@testing-library/react";
 import App from "./App";
 
-test("One plus one should equal two", () => {
-  expect(1 + 1).toBe(2);
-});
-
 import React from "react";
 import "@testing-library/jest-dom/extend-expect";
 import userEvent from "@testing-library/user-event";
 
-import Form from "./components/Form";
+import Form from "./components/Form/FormComponent";
 import Table from "./components/Table";
+
+test("One plus one should equal two", () => {
+  expect(1 + 1).toBe(2);
+});
 
 describe("App", () => {
   test("You can add a student", () => {
